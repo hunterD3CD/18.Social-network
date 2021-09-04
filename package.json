@@ -1,0 +1,25 @@
+{
+  "name": "02-Challenge",
+  "version": "1.0.0",
+  "description": "first edits",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunterD3CD/18.Social-network.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hunterD3CD/18.Social-network/issues"
+  },
+  "homepage": "https://github.com/hunterD3CD/18.Social-network#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4"
+  }
+}
