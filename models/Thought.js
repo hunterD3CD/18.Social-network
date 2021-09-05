@@ -26,7 +26,7 @@ const reactionSchema = new Schema(
       type: Date,
       //   Set default value to the current timestamp
       default: Date.now,
-      //   Use a getter method to format the timestamp on query
+      //   the value in the createdAt field will be formatted by the dataFormat() function
       get: (createdAtVal) => dateFormat(createdAtVal),
     },
   },
@@ -55,6 +55,7 @@ const thoughtSchema = new Schema(
       required: true,
     },
     // Array of nested documents created with the reactionSchema
+    // associate reactions with thoughts
     reactions: [reactionSchema],
   },
   {
@@ -66,9 +67,9 @@ const thoughtSchema = new Schema(
   }
 );
 
-// get total count of friends on retrieval
+// get total count of reactions on retrieval
 thoughtSchema.virtual("reactionCount").get(function () {
-  return this.replies.length;
+  return this.reactions.length;
 });
 
 // ------------------------------------------------------------create the Thought model including reaction schema using the thought Schema-------------------------------------------------------------

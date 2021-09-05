@@ -22,13 +22,16 @@ const userSchema = new Schema(
     },
     thoughts: [
       {
+        // it tell Mongoose to expect an ObjectId and to tell it that its data comes from the Thought model
         type: Schema.Types.ObjectId,
+        // it tell the User model which documents to search to find the right thought
         ref: "Thought",
       },
     ],
     friends: [
       {
         type: Schema.Types.ObjectId,
+        // Array of _id values referencing the User model (self-reference)
         ref: "User",
       },
     ],
