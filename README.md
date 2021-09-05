@@ -13,11 +13,12 @@ build an API for a social network web application where users can share their th
 - Mongoose
 
 # Video link:
-This is updated walkthrough video
-Part I:
+- This is updated walkthrough video
+
+- Part I:
 https://drive.google.com/file/d/1Iy3ssChON1itfnPB8Ph30bQvKwCUFvaM/view
 
-Part II:
+- Part II:
 https://drive.google.com/file/d/1rFmToJD7ouf6KC3cLKr-SmF5Eox9kLtQ/view
 
 
