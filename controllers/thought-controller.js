@@ -1,4 +1,4 @@
-const { Thought, Thought } = require("../models");
+const { Thought, User } = require("../models");
 
 const thoughtController = {
   // ---------------------------------------------------------------/api/thoughts-------------------------------------------------------------
@@ -10,7 +10,7 @@ const thoughtController = {
         select: "-__v",
       })
       .populate({
-        path: "thoughts",
+        path: "thoughtText",
         select: "-__v",
       })
       .select("-__v")
